@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftSell | Sell Unused Software Licenses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body{ 
+            font-family: 'Inter', sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <div class="logo"><a href="#">LOGO</a></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#why-choose-us">Why choose us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#get-in-touch">Contact Us</a></li>
+      </ul>
+
+      <div class="dark-hamburger">
+        <button class="darkmode-toggle" onclick="toggleDarkMode()"></button>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+    
+    <!--Hero Section-->
+    <section class="hero">
+      <h1>Monetize Unused Software Licenses</h1>
+      <p>SoftSell transforms idle software into valuable revenue — fast, safe, and easy.</p>
+      <div class="cta-buttons">
+        <a href="#quote" class="btn-primary">Get a Quote</a>
+        <a href="#sell" class="btn-secondary">Sell My Licenses</a>
+      </div>
+    </section>
+
+    <!--How it Works-->
+    <section class="features" id="how-it-works">
+      <h2>How it Works</h2>
+      <p class="subheading">Turn your unused software licenses into cash in just a few easy steps.</p>
+      <div class="feature-boxes">
+        <!-- Box 1 -->
+        <div class="feature-box">
+          <div class="icon-circle"><span>📤</span></div>
+          <h3>Upload License</h3>
+          <p>Provide your software details securely via our form</p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="feature-box">
+          <div class="icon-circle"><span>💰</span></div>
+          <h3>Get Valuation</h3>
+          <p>We assess your licenses and give you a fair market price.</p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="feature-box">
+          <div class="icon-circle"><span>✅</span></div>
+          <h3>Get Paid</h3>
+          <p>Receive your payment promptly after verification</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Why Choose SoftShells ?-->
+    <section class="features-2" style="padding-top: 60px;" id="why-choose-us">
+      <h2>Why Choose Us</h2>
+      <p class="subheading">We offer unmatched speed, security, and value when it comes to software license reselling.</p>
+      <div class="feature-boxes-2">
+        <div class="feature-box-2">
+          <div class="icon-circle-2"><span>⚡</span></div>
+          <h3>Fast Process</h3>
+          <p>Complete your sale in less than 24 hours</p>
+        </div>
+        <div class="feature-box-2">
+          <div class="icon-circle-2"><span>🔒</span></div>
+          <h3>Secure Deals</h3>
+          <p>End-to-end encryption ensures total safety</p>
+        </div>
+        <div class="feature-box-2">
+          <div class="icon-circle-2"><span>👨‍💼</span></div>
+          <h3>Expert Support</h3>
+          <p>Talk to our license consultants anytime</p>
+        </div>
+        <div class="feature-box-2">
+          <div class="icon-circle-2"><span>💸</span></div>
+          <h3>Best Payouts</h3>
+          <p>We offer top value for your software</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="features-3" id="testimonials">
+      <h2>What our clients say</h2>
+
+      <div class="testimonial-box">
+        <button onclick="prevTestimonial()" class="prev-testimonial">←</button>
+
+        <div id="photo">
+          <img id="client-photo" src="https://via.placeholder.com/80" alt="Client Photo">
+        </div>
+
+        <div class="text">
+          <p id="testimonial-text"></p>
+          <strong id="client-name"></strong><br>
+          <span id="client-role"></span>
+        </div>
+
+        <button onclick="nextTestimonial()" class="next-testimonial">→</button>
+      </div>
+
+      <div class="indicator">
+        <div class="indicator-line"></div>
+        <div class="indicator-line"></div>
+        <div class="indicator-line"></div>
+        <div class="indicator-line"></div>
+      </div>
+    </section>
+
+    <!--Get in Touch-->
+    <section class="features-4" id="get-in-touch">
+      <h2>Get In Touch</h2>
+      <p id="company-detail"><span>Phone: </span>+91 9999999999</p>
+      <p id="company-detail"><span>Email: </span>test@gmail.com</p>
+      <p id="company-detail" style="margin-bottom: 25px;"><span>Address: </span>B-102, Green Residency, Sector 56, Noida, Uttar Pradesh 201301, India</p>
+
+      <!-- Contact Form -->
+      <form id="contactForm">
+
+        <!-- Left Side -->
+        <div id="left-side">
+          <div id="form-name">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div id="form-email">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div id="form-company">
+            <input type="text" id="company" name="company" placeholder="Company Name" required>
+          </div>
+          <div id="form-license">
+            <select id="licenseType" name="licenseType" required>
+              <option value="" id="options">Select License Type</option>
+              <option value="windows" id="options">Windows</option>
+              <option value="adobe" id="options">Adobe</option>
+              <option value="autodesk" id="options">Autodesk</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div id="right-side">
+          <textarea id="message" name="message" placeholder="Your message..." rows="10" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div id="form-submit">
+          <button type="submit" class="btn-primary">Submit</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Success Popup -->
+    <div id="popup">
+      <div id="form-success">
+        <h3>Form Submitted</h3>
+        <p>We will reach out to you soon!</p>
+        <button onclick="closePopup()" id="close-btn">Close</button>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <p>&copy; 2025 SoftSell. All rights reserved.</p>
+      <p id="footer-text">Transform your unused software into cash today! Fast, secure, and easy.</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/SoftSell" id="facebook" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com/SoftSell" id="twitter" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/company/SoftSell" id="linkedin" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
