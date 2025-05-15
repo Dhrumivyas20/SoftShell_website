@@ -84,7 +84,7 @@ body.dark-mode .nav-links li a:hover {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    background-image: url('img/110801_sun_icon.svg');
+    background-image: url('110801_sun_icon.svg');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +96,7 @@ body.dark-mode .nav-links li a:hover {
 
 .darkmode-toggle.dark {
     background-color: #6997fb;
-    background-image: url('img/111087_moon_icon.svg');
+    background-image: url('111087_moon_icon.svg');
 }
 
 .hamburger {
